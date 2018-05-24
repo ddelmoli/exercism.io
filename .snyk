@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:tar:20151103':
+    - lineman > fetcher > decompress > tar:
+        patched: '2018-05-24T05:57:51.557Z'
+  'npm:uglify-js:20151024':
+    - lineman > grunt-contrib-handlebars > handlebars > uglify-js:
+        patched: '2018-05-24T05:57:51.557Z'
