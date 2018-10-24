@@ -1,0 +1,28 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - lineman > grunt-watch-nospawn > gaze > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > grunt > findup-sync > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > grunt-watch-nospawn > gaze > fileset > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > grunt > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > grunt > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > testem > fileset > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > testem > fireworm > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > testem > fileset > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > grunt-watch-nospawn > gaze > fileset > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > testem > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
+    - lineman > testem > tap > glob > minimatch:
+        patched: '2018-10-24T04:45:20.674Z'
