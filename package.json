@@ -10,13 +10,17 @@
     "grunt": "~0.4.1",
     "grunt-concat-sourcemap": "^0.4.3",
     "grunt-ngmin": "~0.0.2",
-    "lineman": "~0.37.0"
+    "lineman": "~0.37.0",
+    "snyk": "^1.190.0"
   },
   "engines": {
     "node": "~>0.10.5",
     "npm": "~>1.2.18"
   },
   "scripts": {
-    "postinstall": "bundle exec compass compile -e production --force && cd frontend && lineman build"
-  }
+    "postinstall": "bundle exec compass compile -e production --force && cd frontend && lineman build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
