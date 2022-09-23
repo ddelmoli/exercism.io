@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - lineman > testem > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2022-09-23T09:07:06.419Z'
+  'npm:mime:20170907':
+    - lineman > express > send > mime:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > express > connect > send > mime:
+        patched: '2022-09-23T09:07:06.419Z'
+  'npm:minimatch:20160620':
+    - lineman > testem > fileset > glob > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > grunt-watch-nospawn > gaze > fileset > glob > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > grunt-watch-nospawn > gaze > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > testem > fileset > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > grunt-watch-nospawn > gaze > fileset > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+    - lineman > testem > tap > glob > minimatch:
+        patched: '2022-09-23T09:07:06.419Z'
+  'npm:ms:20170412':
+    - lineman > testem > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2022-09-23T09:07:06.419Z'
+  'npm:qs:20140806-1':
+    - lineman > grunt-watch-nospawn > tiny-lr-fork > qs:
+        patched: '2022-09-23T09:07:06.419Z'
+  'npm:tar:20151103':
+    - lineman > fetcher > decompress > tar:
+        patched: '2022-09-23T09:07:06.419Z'
